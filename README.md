@@ -142,14 +142,3 @@ cd ui && npm install && npm run dev
 
 ### In v1
 Content generation, multi-language translation, document upload + parsing, placeholder preservation, glossary injection, provider abstraction, audit logging, basic auth.
-
-### Deliberately out of v1
-Approval workflows, brand-voice fine-tuning, translation memory with fuzzy matching, A/B prompt testing, analytics dashboards, direct push to Braze/Optimove, and role-based permissions beyond basic auth. Each is a full feature — ship v1, watch what people actually use, then prioritize.
-
-## Build effort
-
-Roughly **six weeks** to a usable internal beta for one engineer familiar with the stack: two weeks for API + services + LLM adapter + basic prompts, one week for the UI, one week for document parsing and glossary seed + admin basics, one week for audit logging, auth, and deployment. Add a 1–2 week buffer for prompt tuning once marketers start using it.
-
-## Compliance notes
-
-This tool operates in a regulated iGaming context. Audit logging is mandatory, generated content must carry the responsible-gambling disclaimer, and Bedrock is preferred where keeping data inside the AWS footprint simplifies audits.
